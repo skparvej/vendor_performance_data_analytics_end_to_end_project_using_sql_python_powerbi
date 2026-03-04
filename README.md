@@ -50,29 +50,6 @@ Effective inventory and sales management are critical in the retail sector. This
 - GitHub
 
 ---
-<h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
-
-```
-vendor-performance-analysis/
-│
-├── README.md
-├── .gitignore
-├── requirements.txt
-├── Vendor Performance Report.pdf
-│
-├── notebooks/                  # Jupyter notebooks
-│   ├── exploratory_data_analysis.ipynb
-│   ├── vendor_performance_analysis.ipynb
-│
-├── scripts/                    # Python scripts for ingestion and processing
-│   ├── ingestion_db.py
-│   └── get_vendor_summary.py
-│
-├── dashboard/                  # Power BI dashboard file
-│   └── vendor_performance_dashboard.pbix
-```
-
----
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
 
 - Removed transactions with:
@@ -131,17 +108,17 @@ git clone https://github.com/yourusername/vendor-performance-analysis.git
 ```
 3. Load the CSVs and ingest into database:
 ```bash
-python scripts/ingestion_db.py
+python ingestion_db.py
 ```
 4. Create vendor summary table:
 ```bash
-python scripts/get_vendor_summary.py
+python get_vendor_summary.py
 ```
 5. Open and run notebooks:
-   - `notebooks/exploratory_data_analysis.ipynb`
-   - `notebooks/vendor_performance_analysis.ipynb`
+   - `exploratory_data_analysis.ipynb`
+   - `vendor_performance_analysis.ipynb`
 6. Open Power BI Dashboard:
-   - `dashboard/vendor_performance_dashboard.pbix`
+   - `vendor_performance_dashboard.pbix`
 
 ---
 <h2><a class="anchor" id="final-recommendations"></a>Final Recommendations</h2>
